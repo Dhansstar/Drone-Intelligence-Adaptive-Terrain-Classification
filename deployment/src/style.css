@@ -1,0 +1,167 @@
+/* =========================================
+   1. GLOBAL & STABILITY (Anti-Jitter)
+   ========================================= */
+
+* {
+    font-family: 'Courier New', monospace;
+    transition: none !important;
+    /* Mematikan animasi default agar tidak jitter */
+}
+
+[data-testid="stMainViewContainer"] {
+    background-color: #0c0c0c;
+    overflow-anchor: none;
+}
+
+
+/* Kunci area gambar & grafik agar layout tetap kaku saat loading */
+
+[data-testid="stImage"],
+.stPyplot,
+[data-testid="stMetric"] {
+    min-height: 400px !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #004400;
+    margin-bottom: 10px;
+    contain: paint;
+    /* Optimasi render browser */
+}
+
+[data-testid="stMetric"] {
+    min-height: 110px !important;
+}
+
+
+/* =========================================
+   2. SIDEBAR TRANSPARENCY (Full Clear)
+   ========================================= */
+
+
+/* Maksa lapisan sidebar bening total biar GIF nongol */
+
+[data-testid="stSidebar"],
+[data-testid="stSidebar"]>div:first-child,
+[data-testid="stSidebarNav"],
+[data-testid="stSidebarUserContent"] {
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+}
+
+
+/* Judul NAVIGATION SYSTEM (Label Selectbox) */
+
+[data-testid="stSidebar"] label {
+    font-size: 1.4rem !important;
+    /* Gedein ukuran font */
+    font-weight: 900 !important;
+    /* Tebalin maksimal */
+    color: #00FF00 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000000, 0 0 15px #00FF00 !important;
+    margin-bottom: 10px !important;
+}
+
+
+/* Teks NEURAL UPLINK */
+
+.matrix-menu-text {
+    font-size: 17px !important;
+    /* Ukuran jumbo */
+    font-weight: 900 !important;
+    /* Tebalin maksimal */
+    color: #00FF00 !important;
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 5px #000000, 0 0 20px #00FF00 !important;
+    margin-top: 10px;
+}
+
+
+/* Pembatas (Divider) Hijau Matrix */
+
+[data-testid="stSidebar"] hr {
+    border: 1px solid #00ff00 !important;
+    height: 1px !important;
+    background: linear-gradient(to right, #00FF00) !important;
+}
+
+
+/* =========================================
+   MATRIX UI COMPONENTS
+   ========================================= */
+
+.matrix-header {
+    color: #00FF00;
+    text-shadow: 0 0 8px #00FF00;
+    font-size: 2.2rem;
+    border-bottom: 2px solid #00FF00;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+/* Selectbox Matrix Styling */
+
+div[data-baseweb="select"] {
+    border: 1px solid #00ff00 !important;
+    border-radius: 5px;
+}
+
+div[data-baseweb="select"]>div {
+    background-color: rgba(0, 20, 0, 0.8) !important;
+    color: #00FF00 !important;
+}
+
+
+/* Dropdown Menu List */
+
+ul[data-baseweb="menu"] {
+    background-color: #000000 !important;
+    border: 1px solid #00FF00 !important;
+}
+
+ul[data-baseweb="menu"] li:hover {
+    background-color: rgba(0, 255, 0, 0.3) !important;
+    color: #FFFFFF !important;
+}
+
+
+/* =========================================
+   STATUS INDICATORS & ANIMATION
+   ========================================= */
+
+.status-container {
+    line-height: 1.6;
+    margin-top: 20px;
+    padding: 10px;
+    border-left: 2px solid #004400;
+    background-color: rgba(0, 20, 0, 0.8) !important;
+    color: #00FF00 !important;
+}
+
+.status-online {
+    color: #00FF00 !important;
+    font-size: 14px;
+    font-weight: bold;
+    animation: status-pulse 2s infinite ease-in-out;
+}
+
+.status-encryption {
+    color: #00FF00 !important;
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+@keyframes status-pulse {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}

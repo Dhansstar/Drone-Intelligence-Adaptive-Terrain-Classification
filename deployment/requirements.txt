@@ -1,0 +1,7 @@
+tensorflow==2.16.1
+streamlit
+streamlit-lottie
+opencv-python-headless
+pillow
+numpy<2.0.0
+matplotlib

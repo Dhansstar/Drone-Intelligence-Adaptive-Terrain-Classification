@@ -1,0 +1,26 @@
+1. URL DATASET: 
+
+https://www.kaggle.com/datasets/puneet6060/intel-image-classification/data
+
+KAGGLE HUB:
+
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("puneet6060/intel-image-classification")
+
+print("Path to dataset files:", path)
+
+
+2. URL MODEL:
+
+https://drive.google.com/drive/folders/1qzXUI0nDed2aZD-B7C_0vndLxB-QYCFZ?usp=sharing
+
+
+3. URL DEPLOYMENT:
+
+https://huggingface.co/spaces/Dhansstar/DetectionApp
+
+
+https://dhansstar-detectionapp.hf.space
+
