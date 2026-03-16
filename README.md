@@ -191,3 +191,4 @@ Berikut adalah susunan direktori repositori ini:
 Kombinasi Transfer Learning dan Safety Logic menciptakan visi drone yang tidak hanya akurat, tapi juga reliabel terhadap gangguan dunia nyata.
 
 **Author: Risyadhana Syaifuddin**
+**Link Deployment: https://huggingface.co/spaces/Dhansstar/DetectionApp**
