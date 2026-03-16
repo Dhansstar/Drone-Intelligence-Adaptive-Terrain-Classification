@@ -1,6 +1,5 @@
 ---
 title: DetectionApp
-emoji: 🚀
 colorFrom: red
 colorTo: red
 sdk: docker
@@ -12,9 +11,12 @@ tags:
 - computer-vision
 pinned: false
 short_description: Autonomous Terrain Classification with Xception & Safety Logic
+
+
 ---
 
 # 🚁 Drone Intelligence: Adaptive Terrain Classification
+
 **Autonomous Geospasial Mapping with Dual-Model Strategy (CNN & Xception)**
 
 <div align="center">
@@ -177,7 +179,7 @@ Berikut adalah susunan direktori repositori ini:
 │   ├── Dockerfile           # Setup Container (Python 3.11-slim)
 │   ├── requirements.txt     # Library Dependencies (TF, Streamlit, etc.)
 │   └── .gitattributes       # Konfigurasi Git LFS untuk File Besar
-├── analysis.ipynb  # Notebook Analisis Utama
+├── analysis.ipynb           # Notebook Analisis Utama
 ├── analysis_inf.ipynb       # Notebook Simulasi Inferensi
 ├── url                      # Referensi URL Deployment
 └── README.md
